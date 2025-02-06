@@ -1,0 +1,50 @@
+/* CompanyList.css */
+
+/* Container for the custom search form */
+.company-search-group {
+  display: flex;
+  align-items: stretch;  /* Make sure input and button have the same height */
+  margin-bottom: 1rem;
+  max-width: 600px;  /* Optional: limit the width of the search group */
+}
+
+/* Custom search input styling */
+.company-search-input {
+  flex-grow: 1;  /* Input takes up available space */
+  border: 2px solid #007bff;
+  border-right: none;
+  border-radius: 0.25rem 0 0 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+  min-width: 0;  /* Prevent input from stretching infinitely */
+}
+
+.company-search-input:focus {
+  border-color: #0056b3;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Custom search button styling */
+.company-search-btn {
+  border: 2px solid #007bff;
+  border-left: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.company-search-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.company-search-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

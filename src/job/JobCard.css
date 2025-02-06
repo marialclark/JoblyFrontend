@@ -1,0 +1,51 @@
+/* Card container styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card body styling */
+.card-body {
+  padding: 1rem;
+}
+
+/* Title styling */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Text styling */
+.card-text {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Apply button styling */
+.card-body button.btn.btn-secondary {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the apply button (only if not disabled) */
+.card-body button.btn.btn-secondary:hover:not(:disabled) {
+  background-color: #5a6268;  /* Darker shade of secondary */
+  transform: scale(1.02);
+}
+
+/* Disabled state styling (when applied) */
+.card-body button.btn.btn-secondary:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.8;
+}

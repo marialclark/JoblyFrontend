@@ -1,0 +1,92 @@
+/* ProfilePage.css */
+
+/* Main container as a card */
+.profile-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Page heading */
+.profile-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Username paragraph styling */
+.profile-container p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form labels */
+.profile-container form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Form controls (inputs) */
+.profile-container form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Spacing for each form group */
+.profile-container .mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Alert messages */
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Save Changes button */
+.profile-container button.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 1rem auto 0;
+}
+
+.profile-container button.btn-primary:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,101 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Jobly brand */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333 !important;
+  text-decoration: none !important;
+  margin-left: 1rem;
+}
+
+.navbar-brand:hover {
+  color: #007bff !important;
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333 !important;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-link.active {
+  color: #007bff !important;
+  font-weight: 600;
+}
+
+/* Logout Button Styling */
+.btn.nav-link {
+  background: none;
+  border: none;
+  color: #333 !important;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+.btn.nav-link:hover {
+  color: #dc3545 !important;
+  text-decoration: none;
+}
+
+/* Ensure navbar structure */
+.navbar-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+  .navbar {
+      flex-direction: row;
+      height: auto;
+      padding: 1rem;
+  }
+  
+  /* Force the collapsed links to stay in a row on smaller screens */
+  .navbar-collapse {
+      flex-direction: row !important;
+      justify-content: flex-end;
+  }
+}

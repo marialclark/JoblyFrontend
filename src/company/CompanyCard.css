@@ -1,0 +1,59 @@
+/* CompanyCard.css */
+
+/* Base card styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+/* Add a subtle lift on hover */
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Card body padding */
+.card-body {
+  padding: 1rem;
+}
+
+/* Title styles */
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #007bff; /* Customize this color if needed */
+}
+
+/* Link styles within the title */
+.card-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+/* Description and other text */
+.card-text {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Company logo image styles */
+.card img {
+  display: block;
+  margin-bottom: 0.5rem;
+  /* The inline style in the component limits the width to 100px.
+     You can override or complement that here if needed. */
+}
+
+/* Muted text for employee count */
+.text-muted {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
